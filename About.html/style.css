@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+    background-color: aqua;
+    padding: 10px 20px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.Address{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer{
+    margin-top: 60px;
+}

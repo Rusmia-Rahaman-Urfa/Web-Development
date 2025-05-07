@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hablu's Hero Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hablu's Hero Dashboard</h1>
+    </header>
+    <main>
+        <section id="progress">
+            <h2>Progress & Achievements</h2>
+            <div class="metric">
+                <h3>GPA</h3>
+                <p id="gpa-value">3.0</p>
+                <div id="gpa-update-controls" style="display:none;">
+                    <input type="number" id="new-gpa" placeholder="Enter new GPA">
+                    <button onclick="saveGpa()">Save</button>
+                    <button onclick="toggleGpaInput('gpa')">Cancel</button>
+                </div>
+                <button onclick="toggleGpaInput('gpa')">Update GPA</button>
+            </div>
+            <div class="metric">
+                <h3>Skills Acquired</h3>
+                <ul id="skills-list">
+                    <li>Python (Beginner)</li>
+                </ul>
+                <input type="text" id="new-skill" placeholder="New Skill">
+                <button onclick="addSkill()">Add Skill</button>
+            </div>
+        </section>
+
+        <section id="activity">
+            <h2>Physical Activity</h2>
+            <div class="metric">
+                <h3>Kilometers Run</h3>
+                <p id="run-value">3 km</p>
+                <div id="run-update-controls" style="display:none;">
+                    <input type="number" id="new-run" placeholder="Enter kilometers">
+                    <button onclick="saveMetric('run')">Save</button>
+                    <button onclick="toggleMetricInput('run')">Cancel</button>
+                </div>
+                <button onclick="toggleMetricInput('run')">Update Run</button>
+            </div>
+            <div class="metric">
+                <h3>Weights Lifted</h3>
+                <p id="weights-value">50 kg (Avg)</p>
+                <div id="weights-update-controls" style="display:none;">
+                    <input type="text" id="new-weights" placeholder="Enter weight">
+                    <button onclick="saveMetric('weights')">Save</button>
+                    <button onclick="toggleMetricInput('weights')">Cancel</button>
+                </div>
+                <button onclick="toggleMetricInput('weights')">Update Weights</button>
+            </div>
+        </section>
+
+        <section id="entertainment">
+            <h2>Entertainment</h2>
+            <div class="metric">
+                <h3>Movies Watched</h3>
+                <ul id="movies-list">
+                    <li>Motivational Movie 1</li>
+                </ul>
+                <input type="text" id="new-movie" placeholder="New Movie">
+                <button onclick="addMovie()">Add Movie</button>
+            </div>
+        </section>
+
+        <section id="knowledge">
+            <h2>Knowledge & Insights</h2>
+            <div class="metric">
+                <h3>Interesting Fact</h3>
+                <p id="fact-value">The "International Space Station" orbits Earth roughly 16 times per day.</p>
+                <button onclick="getInterestingFact()">Get New Fact</button>
+            </div>
+        </section>
+
+        <section id="goals">
+            <h2>Goals</h2>
+            <ul id="goal-list">
+                <li>Improve GPA to 3.7 by next semester.</li>
+            </ul>
+            <input type="text" id="new-goal" placeholder="New Goal">
+            <button onclick="addGoal()">Add Goal</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hablu's Hero Dashboard</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

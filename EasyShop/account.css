@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-card {
+    background-color: #f4f3f3;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-buttons button {
+    flex: 1;
+    padding: 12px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .toggle-buttons button.active {
+    font-weight: bold;
+  }
+  
+  .form {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form.active-form {
+    display: flex;
+  }
+  
+  .form input[type="text"],
+  .form input[type="email"],
+  .form input[type="password"] {
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: transparent;
+    color: black;
+  }
+  
+  .form input::placeholder {
+    color: black;
+  }
+  
+  .checkbox {
+    font-size: 0.9em;
+  }
+  
+  .extra-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+  }
+  
+  .extra-options a {
+    color: #ff4d6d;
+    text-decoration: none;
+  }
+  
+  .submit-btn {
+    background-color: orange;
+    color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .switch-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  
+  .switch-text span {
+    color: #ff4d6d;
+    cursor: pointer;
+  }
+  .social-login {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .social-login p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1); 
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #111;
+  color: white;
+  padding: 15px 25px;
+  font-size: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.deal-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.deal-container h1 {
+  color: #e53935;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.deal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.deal-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.deal-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.deal-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.deal-card p {
+  margin: 5px 0;
+}
+
+.deal-card del {
+  color: gray;
+}
+
+.discount {
+  color: green;
+  font-weight: bold;
+}
+
+.timer {
+  color: #f57c00;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+button {
+  background: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background: #e68200;
+}

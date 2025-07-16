@@ -1,0 +1,142 @@
+/* header.css */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #131921;
+    padding: 10px 20px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-country {
+    display: flex;
+    align-items: end;
+    margin-left: 15px;
+    font-size: 13px;
+    color: #c4c4c4;
+}
+
+.nav-country h1 {
+    color: #fff;
+    font-size: 14px;
+}
+.nav-search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    color: gray;
+    border-radius: 4px;
+    height: 36px;
+    overflow: hidden;
+    margin-left: 15px;
+    flex: 1;
+    max-width: 700px;
+}
+.nav-search-category {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    background: #e5e5e5;
+    height: 100%;
+}
+.nav-search-input {
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    height: 100%;
+    font-size: 14px;
+    flex: 1;
+}
+.nav-search-icon {
+    height: 100%;
+    width: 40px;
+    object-fit: contain;
+    padding: 8px;
+    background: #ffd64f;
+}
+
+.nav-language {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nav-text {
+    margin-left: 15px;
+    color: #fff;
+}
+
+.nav-text p {
+    font-size: 10px;
+    margin: 0;
+}
+
+.nav-text h1 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.nav-cart {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 15px;
+}
+
+.nav-bottom {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 20px;
+    background: #232f3e;
+    color: #fff;
+    font-size: 15px;
+    position: relative; 
+}
+
+.nav-bottom div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+.all-categories {
+    position: absolute;
+    top: 165px; /* Adjust based on total navbar height */
+    left: 20px;
+    background: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 220px;
+    border-radius: 6px;
+}
+.all-categories a {
+    color: #131921;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.2s ease;
+}
+
+.all-categories a:hover {
+    color: #ff9900;
+}
+
+.hidden {
+    display: none;
+}
+
